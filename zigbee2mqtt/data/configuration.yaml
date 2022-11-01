@@ -1,0 +1,13 @@
+permit_join: true
+homeassistant: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://mqtt
+availability: true
+serial:
+  port: /dev/ttyACM0
+  adapter: deconz
+frontend:
+  port: 8080
+advanced:
+  network_key: GENERATE

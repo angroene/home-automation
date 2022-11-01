@@ -1,0 +1,11 @@
+default_config:
+tts:
+  - platform: google_translate
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+homeassistant:
+  auth_providers:
+    - type: legacy_api_password
+      api_password: !secret web_http_password
