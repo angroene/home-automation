@@ -8,4 +8,4 @@ scene: !include scenes.yaml
 homeassistant:
   auth_providers:
     - type: legacy_api_password
-      api_password: !secret web_http_password
+      api_password: !secret http_password
